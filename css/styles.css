@@ -93,11 +93,6 @@ ul {
   margin: 0;
 }
 
-/* стили карточек */
-/* .card {
-  display: inline-block;
-} */
-
 /* стили хедера */
 
 .header {
@@ -133,7 +128,9 @@ ul {
 }
 
 .header-logo-link {
-  margin: 24px 93px 25px 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 
 .nav-list {
@@ -143,6 +140,12 @@ ul {
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-link,
+.header-info-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-logo-link {
@@ -408,7 +411,6 @@ ul {
 }
 
 .prod-list-card {
-  border: 1px solid var(--card-border-color);
   max-width: 370px;
   height: 100%;
   overflow: hidden;
@@ -428,4 +430,7 @@ ul {
 
 .prod-list-card .content {
   padding: 20px 24px;
+  border-left: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--card-border-color);
+  border-bottom: 1px solid var(--card-border-color);
 }
